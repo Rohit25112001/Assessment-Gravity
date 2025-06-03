@@ -1,0 +1,10 @@
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    const firstNum = target - nums[i];
+    const secondNum = nums.indexOf(firstNum);
+    if(secondNum !== 1){
+        return [i,secondNum];
+    }
+  }
+}
+console.log(twoSum([2, 7, 11, 15], 9));
